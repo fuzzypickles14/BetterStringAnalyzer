@@ -1,0 +1,4 @@
+Features:
+
+1. find foreign strings automatically
+2. view strings in all encodings
