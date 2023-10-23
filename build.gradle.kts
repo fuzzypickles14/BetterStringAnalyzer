@@ -12,6 +12,11 @@ repositories {
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+    implementation(files("lib/icu4j-73_2.jar"))
+    implementation(files("C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Features\\Base\\lib\\Base.jar",
+            "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\SoftwareModeling\\lib\\SoftwareModeling.jar",
+            "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\Utility\\lib\\Utility.jar",
+            "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\Generic\\lib\\Generic.jar"))
 }
 
 tasks.test {
