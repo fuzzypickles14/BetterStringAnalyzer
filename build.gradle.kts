@@ -16,7 +16,8 @@ dependencies {
     implementation(files("C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Features\\Base\\lib\\Base.jar",
             "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\SoftwareModeling\\lib\\SoftwareModeling.jar",
             "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\Utility\\lib\\Utility.jar",
-            "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\Generic\\lib\\Generic.jar"))
+            "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\Generic\\lib\\Generic.jar",
+            "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\Project\\lib\\Project.jar"))
 }
 
 tasks.test {
