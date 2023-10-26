@@ -1,40 +1,22 @@
 package BSF;
 
+import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 import java.util.Collections;
-import java.util.Dictionary;
 import java.util.HashMap;
 import java.util.Map;
 
 public class BSFStringAndScores {
 
-    private String originalString = "", scoredString = "";
+    private byte[] originalBytes;
     private HashMap<String, Double> encodingScores = new HashMap<>();
 
-    public BSFStringAndScores(String string) {
-        this.originalString = string;
-        this.scoredString = this.normalizeSpaces(this.originalString);
+    public BSFStringAndScores(byte[] bytes) {
+        this.originalBytes = bytes;
     }
 
-    private String normalizeSpaces(String str) {
-        // Remove leading and trailing spaces
-        String newStr = str;
-        newStr = newStr.trim();
-
-        // Collapse consecutive spaces into 1 space
-        newStr = newStr.replaceAll(" {2,}", " ");
-
-        // Collapse consecutive tabs into 1 tab
-        newStr = newStr.replaceAll("\t{2,}", "\t");
-
-        return newStr;
-    }
-
-    public int getScoredStringLength() {
-        return this.scoredString.length();
-    }
-
-    public String getScoredString() {
-        return scoredString;
+    public byte[] getOriginalBytes() {
+        return originalBytes;
     }
 
     public void addEncodingToScores(String encoding, double score) {
@@ -45,16 +27,24 @@ public class BSFStringAndScores {
         return Collections.max(this.encodingScores.entrySet(), Map.Entry.comparingByValue()).getKey();
     }
 
+    public String getEncodedString() {
+        String bestEncoding = this.getBestMatchingEncoding();
+        try {
+            return new String(this.originalBytes, bestEncoding);
+        } catch (UnsupportedEncodingException e) {
+            return "ERROR DECODING STRING WITH ENCODING: " + bestEncoding;
+        }
+    }
+
     @Override
     public int hashCode() {
-        return originalString.hashCode();
+        return Arrays.hashCode(originalBytes);
     }
 
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("OrigString =").append(originalString);
-        builder.append(",ScoredString =").append(scoredString).append(",,");
+        builder.append("OrigBytes =").append(Arrays.toString(originalBytes));
         for (Map.Entry<String, Double> e : this.encodingScores.entrySet()) {
             builder.append(e.getKey()).append(":").append(e.getValue()).append(",,");
         }

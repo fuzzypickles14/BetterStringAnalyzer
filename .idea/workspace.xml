@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="161353f9-dded-4777-9920-dd0f67edf056" name="Changes" comment="Added dependencies">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BSF/BSFCharSetRecognizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BSF/BSFStringAndScores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BSF/BSFStringScorer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BSF/BSFStringSearcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="161353f9-dded-4777-9920-dd0f67edf056" name="Changes" comment="More work to find strings. need to find good way to separate all ascii strings from non ascii strings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BSF/BSFAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BSF/BSFAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BSF/BSFStringAndScores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BSF/BSFStringAndScores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BSF/BSFStringScorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BSF/BSFStringScorer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,13 +151,22 @@
       <option name="project" value="LOCAL" />
       <updated>1698031454262</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="More work to find strings. need to find good way to separate all ascii strings from non ascii strings">
+      <option name="closed" value="true" />
+      <created>1698112189017</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698112189017</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Commit" />
     <MESSAGE value="Added dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dependencies" />
+    <MESSAGE value="More work to find strings. need to find good way to separate all ascii strings from non ascii strings" />
+    <option name="LAST_COMMIT_MESSAGE" value="More work to find strings. need to find good way to separate all ascii strings from non ascii strings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -170,18 +176,7 @@
           <line>15</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/BSF/BSFStringScorer.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="GhidraLauncherConfiguration">
-        <watch expression="foundString.address" language="JAVA" />
-        <watch expression="new String(stringAsBytes, matches[0].getName())" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
