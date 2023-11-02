@@ -18,7 +18,8 @@ dependencies {
             "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\Utility\\lib\\Utility.jar",
             "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\Generic\\lib\\Generic.jar",
             "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\Project\\lib\\Project.jar",
-            "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\Docking\\lib\\Docking.jar"))
+            "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\Docking\\lib\\Docking.jar",
+            "C:\\ReverseEngineering\\ghidra_10.3_PUBLIC\\Ghidra\\Framework\\Gui\\lib\\Gui.jar"))
 }
 
 tasks.test {
