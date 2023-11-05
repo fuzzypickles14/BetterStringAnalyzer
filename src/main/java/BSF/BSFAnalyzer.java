@@ -453,7 +453,7 @@ public class BSFAnalyzer extends AbstractAnalyzer {
             Data recentDefinedString = listing.getDefinedDataContaining(end);
             recentDefinedString.setValue("charset", targetEncoding);
 
-            Msg.trace(this, "Created string '" + bsfCandidate.getEncodedString() + "' at " + start);
+            Msg.trace(this, "Created string '" + bsfCandidate.getEncodedString(targetEncoding) + "' at " + start);
 
             monitor.setMessage("Creating String at " + start);
         }

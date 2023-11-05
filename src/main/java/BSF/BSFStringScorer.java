@@ -1,7 +1,7 @@
 package BSF;
 
-import com.ibm.icu.text.CharsetDetector;
-import com.ibm.icu.text.CharsetMatch;
+//import com.ibm.icu.text.CharsetDetector;
+//import com.ibm.icu.text.CharsetMatch;
 
 import java.io.UnsupportedEncodingException;
 
@@ -13,11 +13,11 @@ public class BSFStringScorer {
     }
 
     public void scoreBSFString(BSFStringAndScores stringAndScores) {
-        CharsetDetector detector = new CharsetDetector();
-        detector.setText(stringAndScores.getOriginalBytes());
-        CharsetMatch matches[] = detector.detectAll();
-        for (CharsetMatch match : matches) {
-            stringAndScores.addEncodingToScores(match.getName(), match.getConfidence());
-        }
+//        CharsetDetector detector = new CharsetDetector();
+//        detector.setText(stringAndScores.getOriginalBytes());
+//        CharsetMatch matches[] = detector.detectAll();
+//        for (CharsetMatch match : matches) {
+//            stringAndScores.addEncodingToScores(match.getName(), match.getConfidence());
+//        }
     }
 }

@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="161353f9-dded-4777-9920-dd0f67edf056" name="Changes" comment="first release commit whoop whoop">
-      <change afterPath="$PROJECT_DIR$/Module.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extension.properties" afterDir="false" />
+    <list default="true" id="161353f9-dded-4777-9920-dd0f67edf056" name="Changes" comment="Added Module.manifest to allow Ghidra to discover plugin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extension.properties" beforeDir="false" afterPath="$PROJECT_DIR$/extension.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BSF/BSFStringAndScores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BSF/BSFStringAndScores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BSF/BSFStringScorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BSF/BSFStringScorer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;fuzzypickles14&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9cd2cfe7-bd02-46fb-8153-777479aacaf4" />
+        <option name="url" value="https://github.com/fuzzypickles14/BetterStringAnalyzer.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -56,24 +71,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "20",
-    "last_opened_file_path": "C:/Users/toomz/IdeaProjects/GhidraBetterStringFinder",
-    "onboarding.tips.debug.path": "C:/Users/toomz/IdeaProjects/GhidraBetterStringFinder/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2816092",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/ReverseEngineering/ghidra_10.2.3_PUBLIC&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/toomz/IdeaProjects/GhidraBetterStringFinder/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2816092&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\toomz\IdeaProjects\GhidraBetterStringFinder" />
@@ -82,7 +97,7 @@
   </component>
   <component name="RunManager" selected="Ghidra Launcher.Run Ghidra">
     <configuration name="Run Ghidra" type="GhidraLauncherConfiguration" factoryName="Ghidra Launcher">
-      <option name="alternativeJrePath" />
+      <option name="alternativeJrePath" value="corretto-18" />
       <option name="alternativeJrePathEnabled" value="false" />
       <option name="args" value="" />
       <option name="headless" value="false" />
@@ -144,8 +159,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GhidraBetterStringFinder [build]" />
         <item itemvalue="Gradle.GhidraBetterStringFinder [assemble]" />
+        <item itemvalue="Gradle.GhidraBetterStringFinder [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698890406043</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Module.manifest to allow Ghidra to discover plugin">
+      <option name="closed" value="true" />
+      <created>1699145939208</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699145939208</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -207,7 +230,8 @@
     <MESSAGE value="More work to find strings. need to find good way to separate all ascii strings from non ascii strings" />
     <MESSAGE value="Somewhat working!!!!&#10;&#10;Need to add parameter to have default encoding rather than pick it" />
     <MESSAGE value="first release commit whoop whoop" />
-    <option name="LAST_COMMIT_MESSAGE" value="first release commit whoop whoop" />
+    <MESSAGE value="Added Module.manifest to allow Ghidra to discover plugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Module.manifest to allow Ghidra to discover plugin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -217,7 +241,19 @@
           <line>15</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-19.0.2/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java</url>
+          <line>640</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GhidraLauncherConfiguration">
+        <watch expression="names" />
+        <watch expression="names.toArray()[0]" />
+        <watch expression="names" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

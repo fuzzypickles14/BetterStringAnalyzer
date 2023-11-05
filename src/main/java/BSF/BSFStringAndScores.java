@@ -27,8 +27,8 @@ public class BSFStringAndScores {
         return Collections.max(this.encodingScores.entrySet(), Map.Entry.comparingByValue()).getKey();
     }
 
-    public String getEncodedString() {
-        String bestEncoding = this.getBestMatchingEncoding();
+    public String getEncodedString(String targetEncoding) {
+        String bestEncoding = targetEncoding;//this.getBestMatchingEncoding();
         try {
             return new String(this.originalBytes, bestEncoding);
         } catch (UnsupportedEncodingException e) {
